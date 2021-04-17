@@ -1,0 +1,127 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: '"Lexend Deca", sans-serif,"Big Shoulders Display", "cursive"';
+  color: #f2f2f2;
+  width: 100%;
+}
+html *,
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container .cards {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.container .cards .card {
+  padding: 45px;
+  min-height: 50vh;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+.container .cards .card .card-avatar-container {
+  display: flex;
+  flex-direction: row;
+}
+.container .cards .card .card-avatar-container .card-avatar {
+  display: block;
+  background-position: left;
+  background-size: contain;
+  width: 60px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+.container .cards .card .card-title {
+  font-family: "Big Shoulders Display", "cursive";
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin-top: 34px;
+}
+.container .cards .card .card-text {
+  font-family: "Lexend Deca", sans-serif;
+  word-break: break-all;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.8;
+  flex: 1 1;
+}
+.container .cards .card .card-btn {
+  background-color: #f2f2f2;
+  outline: 0;
+  border: 0;
+  border-radius: 25px;
+  padding: 18px 0;
+  font-weight: 700;
+  width: 65%;
+  word-break: keep-all;
+}
+.container .cards .card .card-btn:hover {
+  background: transparent;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2 !important;
+  cursor: pointer;
+}
+.container .cards .card.sedans-card {
+  background-color: #e38826;
+}
+.container .cards .card.sedans-card .card-avatar {
+  background-image: url("../images/icon-sedans.svg");
+}
+.container .cards .card.sedans-card .card-btn {
+  color: #e38826;
+}
+.container .cards .card.suvs-card {
+  background-color: #006970;
+}
+.container .cards .card.suvs-card .card-avatar {
+  background-image: url("../images/icon-suvs.svg");
+}
+.container .cards .card.suvs-card .card-btn {
+  color: #006970;
+}
+.container .cards .card.luxury-card {
+  background-color: #004241;
+}
+.container .cards .card.luxury-card .card-avatar {
+  background-image: url("../images/icon-luxury.svg");
+}
+.container .cards .card.luxury-card .card-btn {
+  color: #004241;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    height: 100vh;
+    justify-content: center;
+  }
+  .container .cards {
+    flex-direction: row;
+    width: 65%;
+  }
+  .container .cards .card .card-btn {
+    padding: 18px 0;
+    font-weight: 700;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

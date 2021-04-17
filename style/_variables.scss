@@ -1,0 +1,19 @@
+$layout-desktop-width:1440px;
+$layout-mobile-width:375px;
+
+
+$color-primary-1:hsl(31,77%,52%);
+$color-primary-2:hsl(184, 100%, 22%);
+$color-primary-3:hsl(179, 100%, 13%);
+
+$color-neutral-1:hsla(0, 0%, 100%, 0.75);
+$color-neutral-2:hsl(0, 0%, 95%);
+
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+$font-size:15px;
+$font-family-1:"Lexend Deca",sans-serif;
+$font-family-2:"Big Shoulders Display", "cursive";
+$font-family:$font-family-1 + "," + $font-family-2;

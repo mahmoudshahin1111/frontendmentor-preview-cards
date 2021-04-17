@@ -1,0 +1,113 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .cards{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        overflow: hidden;
+        border-radius: 10px;
+        .card{
+            padding: 45px;
+            min-height: 50vh;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            .card-avatar-container{
+                display: flex;
+                flex-direction: row;
+                .card-avatar{
+                    display: block;
+                    background-position: left;
+                    background-size: contain;
+                    width: 60px;
+                    height: 30px;
+                    background-repeat: no-repeat;
+                }
+            }
+            .card-title{
+                font-family: $font-family-2;
+                text-transform: uppercase;
+                font-size: 2.5em;
+                margin-top: 34px;
+            }
+            .card-text{
+                font-family: $font-family-1;
+                word-break: break-all;
+                font-weight: 100;
+                color: $color-neutral-1;
+                opacity: 0.8;
+                flex: 1 1;
+            }
+            .card-btn{
+                background-color: $color-neutral-2;
+                outline: 0;
+                border: 0;
+                border-radius: 25px;
+                padding: 18px 0;
+                font-weight: 700;
+                width: 65%;
+                word-break: keep-all;
+                &:hover{
+                    background: transparent;
+                    border: 2px solid $color-neutral-2;
+                    color: $color-neutral-2 !important;
+                    cursor: pointer;
+                }
+            }
+
+            &.sedans-card{
+               background-color: $color-primary-1;
+               .card-avatar{
+                background-image: url("../images/icon-sedans.svg");
+               } 
+               .card-btn{
+                   color: $color-primary-1;
+               }
+            }
+            &.suvs-card{
+                background-color: $color-primary-2;
+                .card-avatar{
+                 background-image: url("../images/icon-suvs.svg");
+                } 
+                .card-btn{
+                    color: $color-primary-2;
+                }
+             }
+             &.luxury-card{
+                background-color: $color-primary-3;
+                .card-avatar{
+                 background-image: url("../images/icon-luxury.svg");
+                } 
+                .card-btn{
+                    color: $color-primary-3;
+                }
+             }
+        }
+    }
+}
+
+
+
+@media (min-width:$layout-desktop-width){
+    .container{
+        height: 100vh;
+        justify-content: center;
+        .cards{
+            flex-direction: row;
+            width: 65%;
+            .card{
+                .card-btn{
+                    padding: 18px 0;
+                    font-weight: 700;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
