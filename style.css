@@ -84,7 +84,7 @@ body * {
   background-color: #e38826;
 }
 .container .cards .card.sedans-card .card-avatar {
-  background-image: url("/images/icon-sedans.svg");
+  background-image: url("https://mahmoudshahin1111.github.io/frontendmentor-preview-cards/images/icon-sedans.svg");
 }
 .container .cards .card.sedans-card .card-btn {
   color: #e38826;
@@ -93,7 +93,7 @@ body * {
   background-color: #006970;
 }
 .container .cards .card.suvs-card .card-avatar {
-  background-image: url("/images/icon-suvs.svg");
+  background-image: url("https://mahmoudshahin1111.github.io/frontendmentor-preview-cards/images/icon-suvs.svg");
 }
 .container .cards .card.suvs-card .card-btn {
   color: #006970;
@@ -102,7 +102,7 @@ body * {
   background-color: #004241;
 }
 .container .cards .card.luxury-card .card-avatar {
-  background-image: url("/images/icon-luxury.svg");
+  background-image: url("https://mahmoudshahin1111.github.io/frontendmentor-preview-cards/images/icon-luxury.svg");
 }
 .container .cards .card.luxury-card .card-btn {
   color: #004241;
